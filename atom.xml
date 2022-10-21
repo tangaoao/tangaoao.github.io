@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TangAo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-10-21T15:01:52.954Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>TangAo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在七牛云中开启Https</title>
+    <link href="http://example.com/2022/10/09/%E5%9C%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%B8%AD%E5%BC%80%E5%90%AFHttps/"/>
+    <id>http://example.com/2022/10/09/%E5%9C%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%B8%AD%E5%BC%80%E5%90%AFHttps/</id>
+    <published>2022-10-09T11:20:07.000Z</published>
+    <updated>2022-10-21T15:01:52.954Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h1><h2 id="ssss"><a href="#ssss" class="headerlink" title="ssss"></a>ssss</h2><p>刚改配置123456798，修改如下图：</p><p>12313</p><pre><code>&#123;% qnimg image-20221009210544506.png title:更改123 alt:更改的界面&#125;</code></pre><h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>1.将在腾讯云或者阿里云中注册的域名替换掉博客原有域名tangaoao.github.io</p><p>域名修改在settings里面，在里面输入你的域名。github默认在仓库里面创建一个CNAME文件，看下图：</p><p>​           和高跟鞋 4564                 </p><p><img title="创建222" alt="创建的界面&#125;" src="http://rjhhpkih3.bkt.gdipper.com/static/images/image-20221009205350042.png">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;修改配置&quot;&gt;&lt;a href=&quot;#修改配置&quot; class=&quot;headerlink&quot; title=&quot;修改配置&quot;&gt;&lt;/a&gt;修改配置&lt;/h1&gt;&lt;h2 id=&quot;ssss&quot;&gt;&lt;a href=&quot;#ssss&quot; class=&quot;headerlink&quot; title=&quot;ssss&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城笔记</title>
+    <link href="http://example.com/2022/10/07/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2022/10/07/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-10-07T06:20:07.000Z</published>
+    <updated>2022-10-21T12:53:37.990Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Centos虚拟机"><a href="#Centos虚拟机" class="headerlink" title="Centos虚拟机"></a>Centos虚拟机</h1><h2 id="安装Dockers"><a href="#安装Dockers" class="headerlink" title="安装Dockers"></a>安装Dockers</h2><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="安装必须依赖的包"><a href="#安装必须依赖的包" class="headerlink" title="安装必须依赖的包"></a>安装必须依赖的包</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//step 1: 安装必要的一些系统工具</span><br><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2</span><br></pre></td></tr></table></figure><h4 id="告诉Linux，Docker的安装地址"><a href="#告诉Linux，Docker的安装地址" class="headerlink" title="告诉Linux，Docker的安装地址"></a>告诉Linux，Docker的安装地址</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 建立Docker仓库 (映射仓库地址)</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https:<span class="comment">//download.docker.com/linux/centos/docker-ce.repo</span></span><br></pre></td></tr></table></figure><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="使用以下命令安装Docker引擎、客户端、容器"><a href="#使用以下命令安装Docker引擎、客户端、容器" class="headerlink" title="使用以下命令安装Docker引擎、客户端、容器"></a>使用以下命令安装Docker引擎、客户端、容器</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin</span><br></pre></td></tr></table></figure><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure><h4 id="查看版本以及所安装的镜像"><a href="#查看版本以及所安装的镜像" class="headerlink" title="查看版本以及所安装的镜像"></a>查看版本以及所安装的镜像</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker -v  //查看版本</span><br><span class="line">sudo docker images  //查看所安装的镜像</span><br><span class="line">sudo docker rmi 镜像ID|镜像名字  //删除镜像</span><br></pre></td></tr></table></figure><h4 id="设置开机自启"><a href="#设置开机自启" class="headerlink" title="设置开机自启"></a>设置开机自启</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable docker</span><br></pre></td></tr></table></figure><h2 id="配置Dockers"><a href="#配置Dockers" class="headerlink" title="配置Dockers"></a>配置Dockers</h2><h3 id="配置国内镜像加速"><a href="#配置国内镜像加速" class="headerlink" title="配置国内镜像加速"></a>配置国内镜像加速</h3><h4 id="阿里云容器镜像服务中的镜像加速器"><a href="#阿里云容器镜像服务中的镜像加速器" class="headerlink" title="阿里云容器镜像服务中的镜像加速器"></a>阿里云容器镜像服务中的镜像加速器</h4><img title="镜像加速器" alt="镜像加速器" class="class1" src="http://rjhhpkih3.bkt.gdipper.com/static/images/image-20220922104401583.png"><pre><code> （3）在主模块中设置</code></pre><p>   <img title="在主模块位置" alt="在主模块中的位置" ‘class="class1’" 项目地址：localhost="80</p>" src="http://rjhhpkih3.bkt.gdipper.com/static/images/image-20220922163448034.png">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Centos虚拟机&quot;&gt;&lt;a href=&quot;#Centos虚拟机&quot; class=&quot;headerlink&quot; title=&quot;Centos虚拟机&quot;&gt;&lt;/a&gt;Centos虚拟机&lt;/h1&gt;&lt;h2 id=&quot;安装Dockers&quot;&gt;&lt;a href=&quot;#安装Dockers&quot; class</summary>
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot-Vue</title>
+    <link href="http://example.com/2022/03/24/SpringBoot-Vue/"/>
+    <id>http://example.com/2022/03/24/SpringBoot-Vue/</id>
+    <published>2022-03-24T06:20:07.000Z</published>
+    <updated>2022-03-24T13:44:57.036Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h3><h4 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h4><h5 id="下载Vue以及Vue脚手架（Vue-cli"><a href="#下载Vue以及Vue脚手架（Vue-cli" class="headerlink" title="下载Vue以及Vue脚手架（Vue-cli)"></a>下载Vue以及Vue脚手架（Vue-cli)</h5><ol><li>下载Node.js,使用npm进行下载</li><li>在cmd中输入：npm install -g vue【下载Vue】</li><li>输入：npm install @vue/cli -g 【下载脚手架】</li><li>vue -V 【查看vue版本】</li></ol><h5 id="创建Vue项目"><a href="#创建Vue项目" class="headerlink" title="创建Vue项目"></a>创建Vue项目</h5><ol><li>创建项目目录：SpringBoot-Vue</li><li>在项目目录下打开cmd</li><li>输入：vue creat [项目名]<ol><li>选择Manually select falures,点击回车</li><li>选择Vuex、Babel、TypeScript和Router，回车</li><li>选择Vue版本 Vue3.x,回车</li><li>输入y,选择In Package.json，输入N</li></ol></li><li>进入项目文件夹：cd [文件夹名称]</li><li>运行项目：npm run server</li><li>结束项目：Ctrl +C</li></ol><h5 id="下载使用Element–Plus【桌面端组件库】"><a href="#下载使用Element–Plus【桌面端组件库】" class="headerlink" title="下载使用Element–Plus【桌面端组件库】"></a>下载使用Element–Plus【桌面端组件库】</h5><ol><li> 命令框输入：npm install element-plus –save -g</li></ol><h6 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h6><ol><li><p>Element-Plus中的图标无法显示：</p><ol><li><p>解决方案一：将用过的图标单独引入并注册</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">import</span> &#123;<span class="title class_">Location</span>, <span class="title class_">Setting</span>, <span class="title class_">Menu</span> ,<span class="title class_">Document</span>&#125; <span class="keyword">from</span> <span class="string">&#x27;@element-plus/icons&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">        <span class="attr">components</span>: &#123;</span><br><span class="line">            <span class="title class_">Location</span>, <span class="title class_">Setting</span>, <span class="title class_">Menu</span> ,<span class="title class_">Document</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;Aside&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li></ol></li></ol><p>​            2. 解决方案二：找到Icon图标选项，选择对应的图标代码，添加</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h3&gt;&lt;h4 id=&quot;项目搭建&quot;&gt;&lt;a href=&quot;#项目搭建&quot; class=&quot;headerlink&quot; title=&quot;项目搭建&quot;&gt;&lt;/a&gt;项目搭</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>blog</title>
+    <link href="http://example.com/2022/03/21/blog/"/>
+    <id>http://example.com/2022/03/21/blog/</id>
+    <published>2022-03-21T15:38:54.000Z</published>
+    <updated>2022-03-22T05:47:31.591Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h4><p>新华社北京1月24日电 中共中央政治局1月24日召开会议，审议《中央政治局常委会听取和研究全国人大常委会、国务院、全国政协、最高人民法院、最高人民检察院党组工作汇报和中央书记处工作报告的综合情况报告》、《信访工作条例》。中共中央总书记习近平主持会议。</p><p>会议对全国人大常委会、国务院、全国政协、最高人民法院、最高人民检察院党组和中央书记处2021年的工作给予充分肯定，同意其对2022年的工作安排。会议认为，过去一年，5家党组认真学习贯彻习近平新时代中国特色社会主义思想，全面贯彻党的十九大和十九届历次全会精神，毫不动摇坚持党中央集中统一领导，认真贯彻落实党中央决策部署，围绕党和国家工作全局履行职责，加强党组自身建设，为实现“十四五”良好开局作出积极贡献，为庆祝建党一百周年营造良好环境，各方面工作取得新成效。中央书记处在中央政治局和中央政治局常委会领导下，按照党中央部署要求履职尽责，在推动党中央决策部署落实、加强党内法规制度建设、指导群团工作和群团改革等方面做了大量工作。</p><p>会议强调，2022年是进入全面建设社会主义现代化国家、向第二个百年奋斗目标进军新征程的重要一年。全国人大常委会、国务院、全国政协、最高人民法院、最高人民检察院党组要坚持以习近平新时代中国特色社会主义思想为指导，深入领会“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做到“两个维护”，胸怀中华民族伟大复兴战略全局和世界百年未有之大变局，紧扣筹备和召开党的二十大聚焦发力，坚持稳中求进工作总基调，坚定历史自信，保持历史主动，踔厉奋发、笃行不怠，扎扎实实做好各项工作。要坚持全面从严治党永远在路上，把严的主基调坚持下去，严格执行中央八项规定及其实施细则精神，持之以恒纠治“四风”，毫不手软查处腐败，营造风清气正的政治生态。中央书记处要带头维护党中央权威和集中统一领导，围绕中央政治局和中央政治局常委会部署要求，立足自身职责定位，突出重点抓好落实，深入开展调查研究，完成好党中央交办的各项任务。</p><p>会议指出，信访工作是党的群众工作的重要组成部分，是了解社情民意的重要窗口。通过制定《信访工作条例》，总结我们党长期以来领导和开展信访工作经验特别是党的十八大以来信访工作制度改革成果，对于坚持党对信访工作的全面领导，理顺信访工作体制机制，进一步规范和加强新时代信访工作，具有重要意义。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure><p>会议强调，要把握新时代信访工作的原则和要求，践行以人民为中心的发展思想，完善信访工作责任体系，用好信访工作制度改革成果。要坚持和加强党对信访工作的全面领导，健全完善党委统一领导、政府组织落实、联席会议协调、信访部门推动、各方齐抓共管的工作格局。要做好条例的学习培训、宣传解读和落实情况的督促检查，在全社会营造办事依法、遇事找法、解决问题用法、化解矛盾靠法的良好环境。信访工作联席会议、信访工作部门要牢记职责使命，坚持人民至上，强化问题导向，主动担当作为，不断提高工作能力和水平。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;第一篇博客&quot;&gt;&lt;a href=&quot;#第一篇博客&quot; class=&quot;headerlink&quot; title=&quot;第一篇博客&quot;&gt;&lt;/a&gt;第一篇博客&lt;/h4&gt;&lt;p&gt;新华社北京1月24日电 中共中央政治局1月24日召开会议，审议《中央政治局常委会听取和研究全国人大常委会、国务院、全</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/03/21/hello-world/"/>
+    <id>http://example.com/2022/03/21/hello-world/</id>
+    <published>2022-03-21T14:25:58.658Z</published>
+    <updated>2022-03-21T14:25:27.364Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
