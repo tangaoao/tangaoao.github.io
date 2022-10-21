@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-21T15:01:52.954Z</updated>
+  <updated>2022-10-21T15:09:10.042Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/10/09/%E5%9C%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%B8%AD%E5%BC%80%E5%90%AFHttps/"/>
     <id>http://example.com/2022/10/09/%E5%9C%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%B8%AD%E5%BC%80%E5%90%AFHttps/</id>
     <published>2022-10-09T11:20:07.000Z</published>
-    <updated>2022-10-21T15:01:52.954Z</updated>
+    <updated>2022-10-21T15:09:10.042Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h1><h2 id="ssss"><a href="#ssss" class="headerlink" title="ssss"></a>ssss</h2><p>刚改配置123456798，修改如下图：</p><p>12313</p><pre><code>&#123;% qnimg image-20221009210544506.png title:更改123 alt:更改的界面&#125;</code></pre><h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>1.将在腾讯云或者阿里云中注册的域名替换掉博客原有域名tangaoao.github.io</p><p>域名修改在settings里面，在里面输入你的域名。github默认在仓库里面创建一个CNAME文件，看下图：</p><p>​           和高跟鞋 4564                 </p><p><img title="创建222" alt="创建的界面&#125;" src="http://rjhhpkih3.bkt.gdipper.com/static/images/image-20221009205350042.png">]]></content>
+    <content type="html"><![CDATA[<h1 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h1><h2 id="ssss"><a href="#ssss" class="headerlink" title="ssss"></a>ssss</h2><p>刚改配置123456798，修改如下图：</p><p>12313</p><pre><code>&#123;% qnimg image-20221009210544506.png title:更改123 alt:更改的界面&#125;</code></pre><h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>1.将在腾讯云或者阿里云中注册的域名替换掉博客原有域名tangaoao.github.io</p><p>域名修改在settings里面，在里面输入你的域名。github默认在仓库里面创建一个CNAME文件，看下图：</p><p>​           和高跟鞋 4564                 </p><p><img title="标题" alt="创建标题" src="http://rjhhpkih3.bkt.gdipper.com/static/images/image-20221009205350042.png">]]></content>
     
     
       
